@@ -44,8 +44,8 @@ for page in range(int(total_page)):
 conn = connect_sql.Connect()
 cursor = conn.cursor()
 sql = """
-      INSERT INTO TEST(name, user_rank, evaluation, date)
-      values (?, ?, ?, ?)
+      INSERT INTO 豫西大峡谷(name, evaluation, date)
+      values (?, ?, ?)
       """
 new_date = []
 for i in range(len(all_user_name)):
