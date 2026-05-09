@@ -17,7 +17,7 @@ all_score = []
 all_commentDetail = []
 all_commentTime = []
 
-comment_list = content.finder('div', "commentList")
+# comment_list = content.finder('div', "commentList")
 page_list = content.finder('ul', "ant-pagination")
 total_page = page_list.find_all('li')[-3].find('a').get_text(strip=True)
 count = 1
