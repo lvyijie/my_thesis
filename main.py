@@ -55,7 +55,7 @@ for i in range(len(all_user_name)):
 for i in range(len(all_user_name)):
     if all_user_name[i] is None or all_user_name[i] == ' ':
         all_user_name[i] = "匿名用户"
-    cursor.execute(sql, all_user_name[i], int(all_score[i][0]), all_commentDetail[i], new_date[i])
+    cursor.execute(sql, all_user_name[i], all_commentDetail[i], new_date[i])
 
 conn.commit()
 cursor.close()
